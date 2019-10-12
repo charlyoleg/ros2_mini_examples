@@ -9,7 +9,8 @@ from std_msgs.msg import String
 class PublishOnTralala(Node):
 
     def __init__(self):
-        super().__init__('simple_pub')
+        #super().__init__('simple_pub') # you can choose any name for the node
+        super().__init__('publish_on_tralala') # but, it is easier that the ros-node-name is identical to the python-module-name
         self.publisher_ = self.create_publisher(String, 'tralala', 10)
         timer_period = 0.5  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
