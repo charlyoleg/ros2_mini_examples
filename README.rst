@@ -22,8 +22,10 @@ Getting Started
 
   source /opt/ros/dashing/setup.bash
   mkdir -p ros2_mini_examples_ws/src
-  cd ros2_mini_examples_ws
-  git clone https://github.com/charlyoleg/ros2_mini_examples src/
+  cd ros2_mini_examples_ws/src
+  git clone https://github.com/charlyoleg/ros2_mini_examples
+  cd ..
+  colcon list
   colcon build
   source install/setup.bash
   ros2 pkg list
