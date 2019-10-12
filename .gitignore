@@ -1,0 +1,4 @@
+# .gitignore of ros2_mini_examples
+*~
+*.pdf
+
