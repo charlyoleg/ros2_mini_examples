@@ -3,7 +3,6 @@
 import rclpy
 from rclpy.node import Node
 
-from std_msgs.msg import String
 
 
 class SimpletX(Node):
@@ -15,9 +14,8 @@ class SimpletX(Node):
     self.i = 0
 
   def timer_callback(self):
-    msg = String()
-    msg.data = 'simplet_x sings: %d' % self.i
-    self.get_logger().info('Singing: "%s"' % msg.data)
+    msg = 'simplet_x sings: {d}'.format(self.i)
+    self.get_logger().info('Singing: "{s}"'.format(msg))
     self.i += 1
 
 

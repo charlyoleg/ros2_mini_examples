@@ -3,7 +3,6 @@
 import rclpy
 from rclpy.node import Node
 
-from std_msgs.msg import String
 
 
 class SimpletA(Node):
@@ -15,9 +14,8 @@ class SimpletA(Node):
     self.i = 0
 
   def timer_callback(self):
-    msg = String()
-    msg.data = 'simplet_a says: %d' % self.i
-    self.get_logger().info('Saying: "%s"' % msg.data)
+    msg = 'simplet_a says: {d}'.format(self.i)
+    self.get_logger().info('Saying: "{s}"'.format(msg))
     self.i += 1
 
 

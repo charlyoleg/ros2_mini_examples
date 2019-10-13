@@ -23,6 +23,7 @@ In a first console::
 In a second console::
 
   source /opt/ros/dashing/setup.bash
+  source install/setup.bash
   ros2 node list
   ros2 topic list
   ros2 topic echo /tralala

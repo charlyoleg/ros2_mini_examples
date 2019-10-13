@@ -3,7 +3,6 @@
 import rclpy
 from rclpy.node import Node
 
-from std_msgs.msg import String
 
 
 class SimpletY(Node):
@@ -15,9 +14,8 @@ class SimpletY(Node):
     self.i = 0
 
   def timer_callback(self):
-    msg = String()
-    msg.data = 'simplet_y whistles: %d' % self.i
-    self.get_logger().info('Whistling: "%s"' % msg.data)
+    msg = 'simplet_y whistles: {d}'.format(self.i)
+    self.get_logger().info('Whistling: "{s}"'.format(msg))
     self.i += 1
 
 
