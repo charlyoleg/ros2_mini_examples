@@ -39,3 +39,5 @@ Observations
 
 - The name of the message must start with a Capital letter (e.g: Billet.msg)
 - When using a message-path, /msg/ is optional (e.g: py_publish_custom_message/msg/Billet and py_publish_custom_message/Billet are equivalent)
+- Custom messages can currently only be created by ament_cmake package (i.e. not with ament_python)
+
