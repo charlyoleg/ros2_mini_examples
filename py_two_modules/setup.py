@@ -7,6 +7,7 @@ setup(
   version='0.1.0',
   py_modules=[
     'simplet_a',
+    'simplet_b',
   ],
   data_files=[
     ('share/' + package_name, ['package.xml']),
@@ -30,6 +31,7 @@ setup(
   entry_points={
     'console_scripts': [
       'simplet_a = simplet_a:main',
+      'simplet_b = simplet_b:main',
     ],
   },
 )
