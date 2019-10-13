@@ -22,12 +22,13 @@ In a first console::
   ros2 msg show py_publish_custom_message/Billet
   ros2 topic pub /trilili py_publish_custom_message/msg/Billet "{value: '50', serial_number: '12345678', owner: 'Picsous'}"
   ros2 topic pub /trilili py_publish_custom_message/Billet "{value: '50', serial_number: '12345678', owner: 'Picsous'}"
-  #ros2 run py_simple_publishing publish_on_tralala
 
 
 In a second console::
 
   source /opt/ros/dashing/setup.bash
+  cd ros2_mini_examples_ws
+  source install/setup.bash
   ros2 node list
   ros2 topic list
   ros2 topic echo /trilili
