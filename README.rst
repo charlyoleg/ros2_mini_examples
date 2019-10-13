@@ -11,9 +11,11 @@ This repo contains several ROS2 packages to illustrate certain ROS2 functionalit
 Prerequisite
 ============
 
-- Install ROS2 Dashing
-- Install colcon
+- `Install ROS2`_ Dashing
+- `Install colcon`_
 
+.. _`Install ROS2`: https://index.ros.org/doc/ros2/Installation/Dashing/Linux-Install-Debians/
+.. _`Install colcon`: https://index.ros.org/doc/ros2/Tutorials/Colcon-Tutorial/#install-colcon
 
 Getting Started
 ===============
