@@ -1,12 +1,12 @@
-=======================
-Notes on py_two_modules
-=======================
+========================
+Notes on py_pypkg_doremi
+========================
 
 
 Presentation
 ============
 
-This ros2-package contains two simple python-nodes.
+This ros2-package contains a python-package.
 
 
 Getting started
@@ -17,8 +17,8 @@ In a first console::
   cd ros2_mini_examples_ws
   source /opt/ros/dashing/setup.bash
   source install/setup.bash
-  ros2 run py_two_modules simplet_a
-  ros2 run py_two_modules simplet_b
+  ros2 run py_pypkg_doremi simplet_x
+  ros2 run py_pypkg_doremi simplet_y
 
 
 In a second console::
