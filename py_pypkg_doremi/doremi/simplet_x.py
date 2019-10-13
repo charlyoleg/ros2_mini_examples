@@ -14,8 +14,8 @@ class SimpletX(Node):
     self.i = 0
 
   def timer_callback(self):
-    msg = 'simplet_x sings: {d}'.format(self.i)
-    self.get_logger().info('Singing: "{s}"'.format(msg))
+    msg = 'simplet_x sings: {:d}'.format(self.i)
+    self.get_logger().info('Singing: "{:s}"'.format(msg))
     self.i += 1
 
 

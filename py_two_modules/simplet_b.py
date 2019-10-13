@@ -14,8 +14,8 @@ class SimpletB(Node):
     self.i = 0
 
   def timer_callback(self):
-    msg = 'simplet_b cries: {d}'.format(self.i)
-    self.get_logger().info('Crying: "{s}"'.format(msg))
+    msg = 'simplet_b cries: {:d}'.format(self.i)
+    self.get_logger().info('Crying: "{:s}"'.format(msg))
     self.i += 1
 
 

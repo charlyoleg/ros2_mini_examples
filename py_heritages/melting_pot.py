@@ -28,7 +28,7 @@ class PublishOnTrilili(Node):
     msg.serial_number = 12345
     msg.owner = 'moi'
     self.publisher_.publish(msg)
-    self.get_logger().info('Yeh: "%s"' % msg.value)
+    self.get_logger().info('Yeh: "{:d}"'.format(msg.value))
     self.i += 1
 
 

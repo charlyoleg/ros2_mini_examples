@@ -14,8 +14,8 @@ class SimpletA(Node):
     self.i = 0
 
   def timer_callback(self):
-    msg = 'simplet_a says: {d}'.format(self.i)
-    self.get_logger().info('Saying: "{s}"'.format(msg))
+    msg = 'simplet_a says: {:d}'.format(self.i)
+    self.get_logger().info('Saying: "{:s}"'.format(msg))
     self.i += 1
 
 

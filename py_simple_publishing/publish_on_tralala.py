@@ -18,9 +18,9 @@ class PublishOnTralala(Node):
 
   def timer_callback(self):
     msg = String()
-    msg.data = 'Hello World: {d}'.format(self.i)
+    msg.data = 'Hello World: {:d}'.format(self.i)
     self.publisher_.publish(msg)
-    self.get_logger().info('Publishing: "{s}"'.format(msg.data))
+    self.get_logger().info('Publishing: "{:s}"'.format(msg.data))
     self.i += 1
 
 
