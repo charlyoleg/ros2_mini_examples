@@ -13,7 +13,7 @@
   <exec_depend>py_simple_publishing</exec_depend>
   <exec_depend>py_two_modules</exec_depend>
   <exec_depend>py_pypkg_doremi</exec_depend>
-  <exec_depend>custom_message</exec_depend>
+  <exec_depend>mia_custom_message</exec_depend>
 
   <!-- These test dependencies are optional
   Their purpose is to make sure that the code passes the linters -->

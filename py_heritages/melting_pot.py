@@ -10,7 +10,7 @@ import publish_on_tralala # from py_simple_publishing
 import simplet_a # from py_two_modules
 #import doremi # from py_pypkg_doremi
 import doremi.simplet_x # from py_pypkg_doremi
-from custom_message.msg import Billet
+from mia_custom_message.msg import Billet
 
 
 class PublishOnTrilili(Node):
