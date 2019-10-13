@@ -1,6 +1,6 @@
-=======================
-Notes on custom_message
-=======================
+===========================
+Notes on mia_custom_message
+===========================
 
 
 Presentation
@@ -18,10 +18,10 @@ In a first console::
   source /opt/ros/dashing/setup.bash
   source install/setup.bash
   ros2 msg list | grep Billet
-  ros2 msg show custom_message/msg/Billet
-  ros2 msg show custom_message/Billet
-  ros2 topic pub /trilili custom_message/msg/Billet "{value: '50', serial_number: '12345678', owner: 'Picsous'}"
-  ros2 topic pub /trilili custom_message/Billet "{value: '50', serial_number: '12345678', owner: 'Picsous'}"
+  ros2 msg show mia_custom_message/msg/Billet
+  ros2 msg show mia_custom_message/Billet
+  ros2 topic pub /trilili mia_custom_message/msg/Billet "{value: '50', serial_number: '12345678', owner: 'Picsous'}"
+  ros2 topic pub /trilili mia_custom_message/Billet "{value: '50', serial_number: '12345678', owner: 'Picsous'}"
 
 
 In a second console::
@@ -38,6 +38,6 @@ Observations
 ============
 
 - The name of the message must start with a Capital letter (e.g: Billet.msg)
-- When using a message-path, /msg/ is optional (e.g: custom_message/msg/Billet and custom_message/Billet are equivalent)
+- When using a message-path, /msg/ is optional (e.g: mia_custom_message/msg/Billet and mia_custom_message/Billet are equivalent)
 - Custom messages can currently only be created by ament_cmake package (i.e. not with ament_python)
 
