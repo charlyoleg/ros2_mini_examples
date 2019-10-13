@@ -19,7 +19,9 @@ In a first console::
   source install/setup.bash
   ros2 msg list | grep Billet
   ros2 msg show py_publish_custom_message/msg/Billet
+  ros2 msg show py_publish_custom_message/Billet
   ros2 topic pub /trilili py_publish_custom_message/msg/Billet "{value: '50', serial_number: '12345678', owner: 'Picsous'}"
+  ros2 topic pub /trilili py_publish_custom_message/Billet "{value: '50', serial_number: '12345678', owner: 'Picsous'}"
   #ros2 run py_simple_publishing publish_on_tralala
 
 
